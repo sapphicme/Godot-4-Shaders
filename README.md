@@ -3,3 +3,5 @@ it is simply a project I put together to play with the shaders I thought were in
 All credit is in the individual shader code 
 if necessary I will put the credit in this readme so you can check the links
 Every shader found here is from the https://godotshaders.com/ website
+
+I did, however, make all the art in this project. 
