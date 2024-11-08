@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b84c2j46roe3d"]
+
+[ext_resource type="Shader" path="res://shaders/wind_waker_water.gdshader" id="1_epcy6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pdtoj"]
+shader = ExtResource("1_epcy6")
+shader_parameter/OCTAVE = 6
+shader_parameter/mulscale = 64.0
+shader_parameter/height = 0.6
+shader_parameter/tide = 0.1
+shader_parameter/foamthickness = 0.1
+shader_parameter/timescale = 1.0
+shader_parameter/waterdeep = 0.3
+shader_parameter/WATER_COL = Color(0.396078, 0.545098, 0.494118, 1)
+shader_parameter/WATER2_COL = Color(0.283999, 0.406899, 0.365258, 1)
+shader_parameter/FOAM_COL = Color(0.727761, 0.848025, 0.80443, 1)
+
+[node name="Water" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_pdtoj")
+offset_right = 640.0
+offset_bottom = 640.0
